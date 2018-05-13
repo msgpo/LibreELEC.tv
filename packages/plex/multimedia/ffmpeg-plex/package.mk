@@ -29,9 +29,7 @@ PKG_PRIORITY="optional"
 PKG_SECTION="multimedia"
 PKG_SHORTDESC="FFmpeg is a complete, cross-platform solution to record, convert and stream audio and video."
 PKG_LONGDESC="FFmpeg is a complete, cross-platform solution to record, convert and stream audio and video."
-
-PKG_IS_ADDON="no"
-PKG_AUTORECONF="no"
+PKG_BUILD_FLAGS="-gold -lto"
 
 # configure GPU drivers and dependencies:
 get_graphicdrivers
@@ -143,7 +141,6 @@ configure_target() {
               --disable-armv5te --disable-armv6t2 \
               --disable-ffprobe \
               --disable-ffplay \
-              --disable-ffserver \
               --disable-devices \
               --enable-gnutls  \
               $FFMPEG_VAAPI \
