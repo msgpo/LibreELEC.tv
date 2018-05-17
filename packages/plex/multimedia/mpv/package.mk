@@ -17,7 +17,7 @@
 ################################################################################
 
 PKG_NAME="mpv"
-PKG_VERSION="old-master"
+PKG_VERSION="v1.2"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
